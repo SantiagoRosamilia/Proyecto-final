@@ -43,8 +43,9 @@ header{
     
 }
 .menu-header li a:hover{
-    color: aqua;
+    color: #E29968;
 }
+
 .submenu{
     position: absolute;
     display: none;
@@ -53,10 +54,10 @@ header{
 .submenu li{
     display: block;
     padding: 15px;
-    
+    color: white;
     text-decoration: none;
     list-style: none;
-    background-color: #C2C2C2;
+    background-color: #03072E;
 }
 .menu-header li:hover .submenu{
     display: block;
