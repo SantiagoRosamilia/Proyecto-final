@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* Header */
+header{
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 1px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #3a2114;
+}
+.logo{
+  border: 2px solid black;
+  position: relative;
+  left: 10%;
+}
+.menu-icon, #check{
+    display: none;
+}
+.menu-icon img{
+    width: 40px;
+    height: 40px; 
+    display: flex;
+}
+.nav-header{   
+    position: relative;
+    left: 89px;
+    padding: 15px;
+    
+}
+.menu-header > li {
+    display: inline-block;
+    position: relative;
+    
+}
+.menu-header li a:hover{
+    color: aqua;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    
+}
+.submenu li{
+    display: block;
+    padding: 15px;
+    
+    text-decoration: none;
+    list-style: none;
+    background-color: #C2C2C2;
+}
+.menu-header li:hover .submenu{
+    display: block;
+}
+ul {
+    display: flex;
+    justify-content: center;        
+}
+header .menu-header > li{
+    
+    border: 0.8px solid black;
+    background-color: #F1F1F1 ;
+    list-style: none;
+    margin: 15px; 
+    padding: 10px; 
+    
+}
+header li a{
+    font-family: sans-serif;
+    color: brown;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.ubic{
+    font-size: 30px;
+    border-left: 2px solid black;
+    background-color:#FEFEFE ;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 160px;
+}
+.lugar{
+    position: relative;
+    right: 45%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    font-size: 110%;
+}
+/* Header Tablet */
+@media screen and (max-width: 1200px) {
+    header{
+        display: flex;
+        justify-content: center;
+        
+    }
+    header .menu-header > li {
+        border: 0.8px solid black;
+        background-color: #F1F1F1;
+        list-style: none;
+        margin: 2px;
+        padding: 3px;
+    }
+    .nav-header{
+        position: relative;
+        left: 0%;
+    }
+    
+    .logo{
+        display: none;
+    }
+    .ubic{
+        display: none;
+    }
+    
+}
+/* Header celular */
+@media screen and (max-width: 500px) {
+   .checkbtn{
+       display: block;
+   }
+   .menu-icon{
+       display: block;
+       position: fixed;
+       top: 20px;
+   }
+   .nav-header{
+       top: 100px;
+   }
+   .nav-header ul{
+       display: block;
+       position: fixed;
+               
+       top: -200%;
+       background: #3a2114 ;
+       width: 100%;
+       right: 0;
+       transition: 1s;
+       
+   }
+   .nav-header ul li{
+       padding: 2rem;
+       display: flex;
+       justify-content: center;
+       background: none;
+       list-style: none;
+       margin: 0;
+       border: 1px solid black;
+    }
+    #check:checked ~ ul{
+        top: 100px;
+    }
+    .nav-header{
+        position: relative;
+        left: -5%;
+    }
+    /* Sub menu */
+    
+    
+}
+
+
+
+/* Contenido */
+.interno{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.red{
+    display: block;
+    text-align: center;
+    margin: 0px 70px 0px 70px ;
+    background-color: #D6DBDF;
+ 
+    left: 10px;
+    padding: 20px;
+    height: 185px;
+    
+}
+.redes{
+    display: flex;
+    gap: 15px;
+}
+form div{
+   margin: 2px;
+}
+input{
+    padding: 3px;
+}
+.whatsapp-flotante{
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/* Contenido tablet */
+@media screen and (max-width: 1200px){
+    .interno{
+        display: grid;
+        grid-template-areas: "enviar redes"
+                             "dire dire";
+        grid-template-columns: none;
+        gap: 0px;
+        width: 100%;
+    }
+    .enviar{
+        grid-area: enviar;
+    }
+    form div {
+        display: grid;
+        margin: 0 20px;
+    }
+    form div label{
+        display: flex;
+        justify-content: center;
+    }
+    .botones{
+        display: inline-block;
+    }
+   
+    .red{
+        grid-area: redes;
+        left: 10px;
+        padding: 20px;
+        height: 300px;
+    }
+    .dire{
+        grid-area: dire;
+        display: block;
+    }
+    .dire p{
+        display: flex;
+        justify-content: center;
+    }
+    .dire div{
+        display: flex;
+        justify-content: center;
+    }
+    .redes{
+        display: block;
+        
+    }
+    
+}
+/* Contenido celular */
+@media screen and (max-width: 500px) {
+    .interno{
+        display: block;
+        
+    }
+    .enviar, .red, .dire{
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+   
+    .red{
+        display: block;
+        text-align: center;
+        margin: 0;
+        background-color: #D6DBDF;
+        
+        left: 10px;
+        padding: 20px;
+        height: 185px;
+    }
+    .redes{
+        
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        
+    }
+    .dire{
+        margin-top: 40px;
+    }
+    .dire iframe{
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+/* Footer */
+footer{   
+    background-color: #3a2114;
+    border-top: 2px solid black;
+    padding: 10px 50px ;
+}
+.logo-f{
+    position: relative;
+    right: 20px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navegacion{
+    margin-left: 150px;
+    
+}
+.diseñador{
+    text-align: center;
+    color: #b5b5b5;
+}
+footer ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+footer .info-contacto , .info-horario{
+    color: gray;
+}
+.menu-footer{
+    list-style: none;
+    gap: 5px;
+}
+.menu-footer li{
+    border: 2px dashed #FFA900;
+}
+
+/* Footer mobile */
+@media screen and (max-width: 1200px) {
+    .info{
+        display: grid;
+        justify-content: center;
+        grid-template-areas: "navegacion navegacion"
+                             "informacion informacion"
+                             "diseñador diseñador";
+                            
+        gap: 10px;
+    }
+    .nav-footer{
+        grid-area: navegacion;   
+    }
+    .menu-footer{
+        display: flex;
+        justify-content: center;
+    }
+    .navegacion{
+        margin-left: 0%;
+    }
+    .data{
+        grid-area: informacion;
+        display: grid;
+        grid-template-areas: "contacto horario";
+        gap: 5px;
+    }
+    .info-contacto{
+        grid-area: contacto;
+    }
+    .info-horario{
+        grid-area: horario;
+    }
+    footer .logo-f{
+        display: none;
+    }
+   
+   
+    footer .diseñador{
+        grid-area: diseñador;
+    }
+}    
+@media screen and (max-width:500px) {
+    .menu-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
