@@ -106,7 +106,8 @@ li{
     header{
         display: flex;
         justify-content: center;
-        
+        position: absolute;
+        width: 100%;
     }
     header .menu-header > li {
         border: 0.8px solid black;
@@ -119,6 +120,10 @@ li{
         position: relative;
         left: 0%;
     }
+    .submenu{
+        left: -6px;
+        top: 36px;
+    }
     
     .logo{
         display: none;
@@ -130,18 +135,23 @@ li{
 }
 /* Header celular */
 @media screen and (max-width: 500px) {
+    header{
+        position: absolute;
+        width: 100%;
+    }
+        
    .checkbtn{
        display: block;
    }
    .menu-icon{
        display: block;
-       position: fixed;
-       top: 20px;
+       position: absolute;
+       top: -105px;
    }
    .nav-header{
        top: 100px;
    }
-   .nav-header ul{
+   .nav-header > ul{
        display: block;
        position: fixed;
                
@@ -152,9 +162,11 @@ li{
        transition: 1s;
        
    }
+   
    .nav-header ul li{
        padding: 2rem;
        display: flex;
+       
        justify-content: center;
        background: none;
        list-style: none;
@@ -163,6 +175,7 @@ li{
     }
     #check:checked ~ ul{
         top: 100px;
+        
     }
     .nav-header{
         position: relative;
