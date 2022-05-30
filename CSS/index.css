@@ -155,7 +155,7 @@ footer .info-contacto , .info-horario{
 }
 
 /* Footer mobile */
-@media screen and (max-width: 1052px) {
+@media screen and (max-width: 1200px) {
     .info{
         display: grid;
         justify-content: center;
@@ -179,6 +179,7 @@ footer .info-contacto , .info-horario{
         grid-area: informacion;
         display: grid;
         grid-template-areas: "contacto horario";
+        gap: 5px;
     }
     .info-contacto{
         grid-area: contacto;
@@ -195,3 +196,10 @@ footer .info-contacto , .info-horario{
         grid-area: diseñador;
     }
 }    
+@media screen and (max-width:500px) {
+    .menu-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
