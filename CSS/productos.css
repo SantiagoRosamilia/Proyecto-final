@@ -52,6 +52,7 @@ header{
     display: none;
     left: -1px;
     top: 51px;
+    
 }
 .submenu li{
     display: block;
@@ -60,9 +61,11 @@ header{
     text-decoration: none;
     list-style: none;
     background-color: #03072E;
+    
 }
 .menu-header li:hover .submenu{
     display: block;
+    z-index: 10;
 }
 ul {
     display: flex;
@@ -223,6 +226,15 @@ li{
     gap: 50px;
 }
 
+.producto-ind > div{
+    transition: all .5s;
+}
+.producto-ind > div:hover{
+    left: 5px;
+    top: 5px;
+    box-shadow: 5px 5px 5px;
+}
+
 .producto-a{
   /*   position: relative;
     right: 450px;
@@ -251,6 +263,7 @@ div p{
     align-content: center;
     flex-direction: column;
     gap: 10px;
+    z-index: 1;
 }
 #agregar-1{
     display: flex;
