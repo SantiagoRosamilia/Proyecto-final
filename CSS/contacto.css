@@ -74,7 +74,11 @@ header .menu-header > li{
     list-style: none;
     margin: 15px; 
     padding: 10px; 
-    
+    transition: all .3s;
+}
+.menu-header > li:hover{
+    padding: 12px;
+    background-color: #b5b5b5;
 }
 header li a{
     font-family: sans-serif;
@@ -213,6 +217,16 @@ li{
     display: flex;
     gap: 15px;
 }
+.redes div{
+    padding: 10px;
+    transition: all .5s;
+}
+.redes div:hover{
+    left: 5px;
+    top: 5px;
+    box-shadow: 5px 5px 5px;
+}
+
 form div{
    margin: 2px;
 }
