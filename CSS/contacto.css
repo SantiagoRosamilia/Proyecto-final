@@ -110,8 +110,8 @@ li{
     header{
         display: flex;
         justify-content: center;
-        position: absolute;
-        width: 100%;
+       /*  position: absolute;
+        width: 100%; */
     }
     header .menu-header > li {
         border: 0.8px solid black;
@@ -139,10 +139,10 @@ li{
 }
 /* Header celular */
 @media screen and (max-width: 500px) {
-    header{
+    /* header{
         position: absolute;
         width: 100%;
-    }
+    } */
         
    .checkbtn{
        display: block;
@@ -177,6 +177,7 @@ li{
        margin: 0;
        border: 1px solid black;
     }
+   
     #check:checked ~ ul{
         top: 100px;
         

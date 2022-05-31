@@ -76,7 +76,11 @@ header .menu-header > li{
     list-style: none;
     margin: 15px; 
     padding: 10px; 
-    
+    transition: all .3s;
+}
+.menu-header > li:hover{
+    padding: 12px;
+    background-color: #b5b5b5;
 }
 header li a{
     font-family: sans-serif;
@@ -108,8 +112,8 @@ li{
     header{
         display: flex;
         justify-content: center;
-        position: absolute;
-        width: 100%;
+       /*  position: absolute;
+        width: 100%; */
     }
     header .menu-header > li {
         border: 0.8px solid black;
@@ -137,10 +141,10 @@ li{
 }
 /* Header celular */
 @media screen and (max-width: 500px) {
-    header{
+    /* header{
         position: absolute;
         width: 100%;
-    }
+    } */
         
    .checkbtn{
        display: block;
