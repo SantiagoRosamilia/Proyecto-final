@@ -168,6 +168,7 @@ li{
        transition: 1s;
        
    }
+
    
    .nav-header ul li{
        padding: 2rem;
@@ -193,8 +194,26 @@ li{
 }
 
 
-
-
+/* Contenido */
+div .contenido-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.info-eblog{
+    background: darkgray;
+    padding: 5px;
+    color: black;
+}
+.imagen-bailey , .imagen-bailey img{
+    width: 100%;
+    height: 250px;
+}
+.buscar h3{
+    display: flex;
+    justify-content: center;
+}
 
 
 

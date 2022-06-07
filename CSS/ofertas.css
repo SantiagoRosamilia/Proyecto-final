@@ -19,6 +19,7 @@ header{
     align-items: center;
     height: 100px;
     background-color: #3a2114;
+    z-index: 1000;
 }
 .logo{
   border: 2px solid black;
