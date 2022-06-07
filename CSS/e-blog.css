@@ -198,17 +198,35 @@ li{
 div .contenido-grid{
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-around;
-    padding: 10px 0;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    gap: 20px;
 }
 .info-eblog{
     background: darkgray;
     padding: 5px;
     color: black;
+    display: flex;
+    flex-direction: column;
+    
 }
-.imagen-bailey , .imagen-bailey img{
+.imagen-bailey {
     width: 100%;
-    height: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.imagen-bailey img{
+    width: 85%;
+}
+.buscar{
+    padding: 10px;
+    height: 100px;
+    background: #FFA900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .buscar h3{
     display: flex;
