@@ -221,6 +221,9 @@ li{
     border-bottom: 2px dotted black ;
     
 }
+.categoria li .cervezas{
+    list-style: none;
+}
 .producto-ind{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

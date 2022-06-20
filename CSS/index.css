@@ -184,7 +184,7 @@ li{
 .info-contenido{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 400px;
+    height: 500px;
 }
 .logo-contenido{
     display: flex;
