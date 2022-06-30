@@ -14,43 +14,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/e-blog.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- 1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- 2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- 3 -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:wght@400;700&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <header>
         
-        <!-- Logo -->
-        <div><h2 class="logo"> <img src="./Imagenes/Logo Efe bebidas edit.png" alt="Logo" width="70" height="70"></h2></div> 
-        <!-- Navegacion -->
-        <nav class="nav-header"> 
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"> 
-                <i class="menu-icon">
-                    <img src="./Imagenes/Logo Efe bebidas edit.png" alt="">
-                </i>
-            </label>
-            <ul class="menu-header">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./productos.html" id="productos">Productos</a>
-                    <ul class="submenu">
-                        <li>Cervezas</li>
-                        <li>Vinos</li>
-                        <li>Espumantes</li>
-                        <li>Jugo y gaseosas</li>
-                        <li>Aperitivos</li>              
-                        <li>Energizantes</li>
-                        <li>Gin</li>
-                        <li>Wisky</li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navegacion-personal">
+            <div class="logo-efe">
+              <img src="../Imagenes/Logo Efe bebidas edit.png" alt="Logo efe">
+            </div>
+            <div class="menu-desplegable">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            
+            <div class="collapse navbar-collapse menu-personal" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item i-menu">
+                  <a class="nav-link a-menu" aria-current="page" href="index.html">Inicio</a>
                 </li>
-                <li><a href="./ofertas.html">Ofertas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./e-blog.html">Eblog</a></li>
-            </ul>
-        </nav>
-        <!-- Pagina actual -->
-        <div class="ubic"><h2 class="lugar">Eblog</h2></div>
-        
+                
+                <li class="nav-item i-menu">
+                  <a class="nav-link a-menu" href="ofertas.html">Ofertas</a>
+                </li>
+                
+                <li class="nav-item i-menu">
+                  <a class="nav-link a-menu" href="contacto.html">Contactos</a>
+                </li>
+                
+                <li class="nav-item i-menu">
+                  <a class="nav-link a-menu" href="e-blog.html">Eblog</a>
+                </li>
+                
+  
+                <li class="nav-item dropdown i-menu productos">
+                  
+                  <a class="nav-link dropdown-toggle a-menu " href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Productos
+                  </a>
+                  <ul class="dropdown-menu desplegable" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="li-sub-menu"><a class="sub-menu" href="#">Cervezas</a></li>
+                    <li class="li-sub-menu"><a class="sub-menu" href="#">Fernet</a></li>
+                    <li class="li-sub-menu"><a class="sub-menu" href="#">Gaseosas</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="lugar">
+                <h1>Ofertas</h1>
+              </div>
     </header>
 
     <!--Contenido interno  -->
@@ -139,6 +160,7 @@
             <p>Diseñado por<!-- Link de Linkedin --> </p>
         </div>
     </footer>
-    
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
