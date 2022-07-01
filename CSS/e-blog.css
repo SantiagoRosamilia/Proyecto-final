@@ -179,9 +179,24 @@ header {
   }
   /*# sourceMappingURL=h.css.map */
 
+/* Contenido final */
+.publicacion-eblog{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.container{
+  margin-top: 20px;
+}
+.titulo-b-c{
+  display: flex;
+  justify-content: center;
+  color: #9D4B1D;
+}
 
-/* Contenido */
-div .contenido-grid{
+
+/* Contenido original */
+/* div .contenido-grid{
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
@@ -217,7 +232,7 @@ div .contenido-grid{
 .buscar h3{
     display: flex;
     justify-content: center;
-}
+} */
 
 
 
