@@ -394,8 +394,20 @@ Header celular
     }
 }
 
-/* Contenido productos */
-
+/* Contenido seccion productos */
+.titulo-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 5px 0;
+    background: #FFA900;
+}
+.titulo-inicio h3{
+    font-family: "PT Serif script=latin rev=1";
+    font-weight: 700;
+    color: brown;
+}
 .producto-ind{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -454,6 +466,13 @@ div p{
     display: flex;
     align-items: center;
 }
+.publi-grande{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+    margin: 10px 35%;
+}
 
 /* Contenido tablet */
 @media screen and (max-width: 1345px){
@@ -498,7 +517,11 @@ div p{
     .producto-ind{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        gap: 7px;
+        
+    }
+    .no-celu{
+        display: none;
     }
 }
 
