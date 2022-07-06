@@ -277,11 +277,18 @@ footer .info-contacto , .info-horario{
     color: gray;
 }
 .menu-footer{
-    list-style: none;
-    gap: 5px;
+  list-style: none;
+  gap: 5px;
+  display: flex;
 }
 .menu-footer li{
-    border: 2px dashed #FFA900;
+  border: 2px dashed #FFA900;
+
+}
+
+.menu-footer li a{
+  text-decoration: none;
+  
 }
 
 /* Footer mobile */

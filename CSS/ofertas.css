@@ -412,9 +412,16 @@ footer .info-contacto , .info-horario{
 .menu-footer{
     list-style: none;
     gap: 5px;
+    display: flex;
 }
 .menu-footer li{
     border: 2px dashed #FFA900;
+
+}
+
+.menu-footer li a{
+    text-decoration: none;
+    
 }
 
 /* Footer mobile */
