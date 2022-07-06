@@ -198,16 +198,20 @@ header {
     background-color: #EBEBEB;
     border-radius: 5%;
     list-style: none;
-    height: 580px;
+    height: 200px;
     width: 250px;
 }
 .ul-clases{
     padding-left: 0rem;
 }
-.categoria > ul li{
-    
+.categoria ul li{
     padding: 15px;
     border-bottom: 2px dotted black ;
+}
+.categoria > ul li a{
+    
+    color: #03072E;
+    text-decoration: none;
     
 }
 .categoria li .cervezas{
