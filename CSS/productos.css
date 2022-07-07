@@ -237,10 +237,13 @@ header {
     right: 450px;
     bottom: 100px; */
     background-color: #BBBBBB;
-    padding: 100px 10px;
+    padding: 18px 10px;
     width: 200px;
 }
-
+.info-p img{
+    width: 180px;
+    height: 220px;
+}
 div p{
     display: flex;
     text-align: center;
@@ -261,6 +264,8 @@ div p{
     flex-direction: column;
     gap: 10px;
     z-index: 1;
+    margin-top: -48px;
+    margin-bottom: 40px;
 }
 #agregar-1{
     display: flex;
