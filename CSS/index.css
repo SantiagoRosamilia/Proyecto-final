@@ -379,6 +379,20 @@ Header celular
     display: block;
 }
 
+.mayor18 h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+.mayor18 p{
+    margin-top: 57px;
+    font-size: 20px;
+}
+.mayor18 label, input{
+    font-size: 19px;
+}
+
 /* Contenido celular */
 @media screen and (max-width: 650px) {
     .info-contenido{
@@ -425,58 +439,71 @@ Header celular
 }
 
 .producto-a{
-  /*   position: relative;
-    right: 450px;
-    bottom: 100px; */
-    background-color: #BBBBBB;
-    padding: 100px 10px;
-    width: 200px;
-}
-
-div p{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-}
-.producto p{
-    display: flex;
-    align-items: center;
-}
-.input{
-    display: flex;
-    align-items: center;
-    -ms-flex-direction: column;
-    margin: 10px;
-    position: relative;
-    top: 50px;
-    align-content: center;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 1;
-}
-#agregar-1{
-    display: flex;
-    left: 13px;
-}
-#comprar{
-    display: flex;
-    left: 21px;
-}
-.img-producto{
-    display: flex;
-    align-items: center;
-}
+    /*   position: relative;
+      right: 450px;
+      bottom: 100px; */
+      background-color: #BBBBBB;
+      padding: 18px 10px;
+      width: 200px;
+      border: 3px solid black;
+  }
+  .info-p img{
+      width: 171px;
+      height: 220px;
+  }
+  div p{
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+  }
+  .producto p{
+      display: flex;
+      align-items: center;
+  }
+  .input{
+      display: flex;
+      align-items: center;
+      -ms-flex-direction: column;
+      margin: 10px;
+      position: relative;
+      top: 50px;
+      align-content: center;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1;
+      margin-top: -48px;
+      margin-bottom: 40px;
+  }
+  #agregar-1{
+      display: flex;
+      left: 13px;
+  }
+  #comprar{
+      display: flex;
+      left: 21px;
+  }
+  .img-producto{
+      display: flex;
+      align-items: center;
+  }
 .publi-grande{
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
     margin: 10px 35%;
+    
 }
 .eblog-index{
     background: #f1f1f1;
     display: flex;
     height: 300px;
+    border: 3px dotted black;
+    border-radius: 15px;
+}
+.eblog-index img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .texto-eblog{
     width: 500px;
@@ -487,6 +514,10 @@ div p{
 .producto-ind{
     margin: 40px 0;
 }
+.info-p p{
+    font-size: 20px;
+}
+
 /* Contenido tablet */
 @media screen and (max-width: 1345px){
     .interno{
@@ -521,7 +552,7 @@ div p{
 
 
 /* Contenido celular */
-@media screen and (max-width: 690px){
+@media screen and (max-width: 875px){
     
     .interno{
         display: grid;
@@ -542,7 +573,7 @@ div p{
 }
 
 /* Contenido celular */
-@media screen and (max-width: 530px){
+@media screen and (max-width: 601px){
 
     .eblog-index{
         width: 500px;

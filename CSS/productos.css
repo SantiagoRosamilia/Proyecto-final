@@ -239,9 +239,10 @@ header {
     background-color: #BBBBBB;
     padding: 18px 10px;
     width: 200px;
+    border: 3px solid black;
 }
 .info-p img{
-    width: 180px;
+    width: 171px;
     height: 220px;
 }
 div p{
