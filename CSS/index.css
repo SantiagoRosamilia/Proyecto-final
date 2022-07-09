@@ -357,7 +357,7 @@ Header celular
 .info-contenido{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 500px;
+    height: auto;
 }
 .logo-contenido{
     display: flex;
@@ -509,7 +509,11 @@ Header celular
     border-bottom-left-radius: 15px;
 }
 .texto-eblog{
-    width: 500px;
+    width: 300px;
+}
+.texto-eblog h3{
+    display: flex;
+    justify-content: center;
 }
 .muestra{
     margin: 30px 0;
@@ -536,6 +540,10 @@ Header celular
     }
 }
 
+@media screen and (max-width: 1000px){
+   
+}
+
 /* Contenido intermedio */
 @media screen and (max-width: 970px){
     
@@ -543,7 +551,7 @@ Header celular
         display: grid;
         grid-template-columns: 3fr;
         gap: 40px;
-        margin: 0 5%;
+        margin: 10px 5%;
     }
     .producto-ind{
         display: grid;
@@ -592,10 +600,11 @@ Header celular
         justify-content: start;
         align-items: flex-start;
     }
+    .texto-eblog{
+        width: 150px;
+    }
 }
-.texto-eblog{
-    width: 150px;
-}
+
 
 
 
