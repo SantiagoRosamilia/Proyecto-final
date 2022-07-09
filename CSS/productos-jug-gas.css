@@ -115,6 +115,9 @@ header {
     font-family: "PT Serif script=latin rev=1";
     font-weight: 700;
   }
+  #header-desplegable{
+    background: #FF9B36;
+  }
   
   @media screen and (max-width: 1110px) {
     header .navegacion-personal {
@@ -306,6 +309,7 @@ div p{
         grid-template-columns: repeat(3, 1fr);
         gap: 3%;
         justify-items: center;
+        margin-bottom: 65px;
     }
 }
 

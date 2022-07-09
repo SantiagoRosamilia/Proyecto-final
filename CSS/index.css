@@ -173,6 +173,9 @@ header {
           -ms-flex-pack: center;
               justify-content: center;
     }
+    #header-desplegable{
+        background: #FF9B36;
+      }
   }
   /*# sourceMappingURL=h.css.map */
 
@@ -573,7 +576,7 @@ Header celular
 }
 
 /* Contenido celular */
-@media screen and (max-width: 601px){
+@media screen and (max-width: 550px){
 
     .eblog-index{
         width: 500px;
@@ -581,9 +584,7 @@ Header celular
         
     }
     .eblog-index img{
-        width{
-            300px
-        }
+        width: 240px;
     }
     .texto-eblog{
         display: flex;
@@ -593,7 +594,7 @@ Header celular
     }
 }
 .texto-eblog{
-    width: 500px;
+    width: 150px;
 }
 
 
