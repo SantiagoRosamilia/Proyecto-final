@@ -354,6 +354,8 @@ Header celular
 }  */
 
 /* Contenido  */
+
+
 .info-contenido{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -712,7 +714,7 @@ footer .info-contacto , .info-horario{
         grid-area: diseñador;
     }
 }    
-@media screen and (max-width:500px) {
+@media screen and (max-width:580px) {
     .menu-footer {
         display: flex;
         flex-direction: column;
