@@ -515,6 +515,7 @@ Header celular
     display: flex;
     justify-content: center;
 }
+
 .muestra{
     margin: 30px 0;
 }
@@ -579,12 +580,13 @@ Header celular
         display: none;
     }
     .eblog-index{
-        width: 500px;
+        width: 700px;
     }
+    
 }
 
 /* Contenido celular */
-@media screen and (max-width: 550px){
+@media screen and (max-width: 726px){
 
     .eblog-index{
         width: 500px;
@@ -594,12 +596,8 @@ Header celular
     .eblog-index img{
         width: 240px;
     }
-    .texto-eblog{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-    }
+    
+    
     .texto-eblog{
         width: 150px;
     }

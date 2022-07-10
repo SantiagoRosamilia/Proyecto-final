@@ -195,7 +195,14 @@ header {
   justify-content: center;
   color: #9D4B1D;
 }
-
+.columna-eblog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.publicacion-eblog img{
+  height: 300px;
+}
 
 /* Contenido original */
 /* div .contenido-grid{
